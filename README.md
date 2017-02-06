@@ -5,16 +5,16 @@ FPS counter that updates in the webgl canvas. Simple 2 digit renderer.
 
 ## Files
 
-* index.js
+* **index.js**
 
   main
 
-* fps.frag.js
+* **fps.frag.js**
 
   frag shader
 
 
-* NumberTexture.js
+* **NumberTexture.js**
 
   generates the numbers texture
 
