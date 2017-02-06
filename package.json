@@ -1,0 +1,29 @@
+{
+  "name": "three-fps-counter",
+  "version": "0.0.1",
+  "description": "simple 2 digit renderer for three.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pailhead/three-fps-counter.git"
+  },
+  "keywords": [
+    "threejs",
+    "webgl",
+    "glsl",
+    "javascript",
+    "3d"
+  ],
+  "author": "Dusan Bosnjak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pailhead/three-fps-counter/issues"
+  },
+  "homepage": "https://github.com/pailhead/three-fps-counter#readme",
+  "dependencies": {
+    "three-screen-quad": "^0.1.0"
+  }
+}
