@@ -1,30 +1,26 @@
 # FPSCounter
 
-FPS counter that updates in the canvas, unlike Stats that does crazy stuff with the dom
-
+FPS counter that updates in the webgl canvas. 
 
 
 ## Files
 
-* FPSCounter.js
+* index.js
 
   main
 
-* fps.frag
+* fps.frag.js
 
   frag shader
 
-* fps.vert
 
-  vert shader
-
-* NumText.js
+* NumberTexture.js
 
   generates the numbers texture
 
 * Stats.js
 
-  computes fps - gutted Stats from three
+  computes fps - Stripped down [Stats.js](https://github.com/mrdoob/stats.js/)
 
 
 
@@ -33,58 +29,23 @@ FPS counter that updates in the canvas, unlike Stats that does crazy stuff with 
 
 
 
-* **FPSCounter( *renderer:[ THREE.WebGLRenderer* ] )**
+* **FPSCounter( *renderer:[ THREE.WebGLRenderer* ] , parameters )**
 
   A renderer from the main app has to be passed 
 
 
 ## Properties
 
-* **left:[ *int* ]**
-
-  distance in pixels from canvas left edge
-
-
-* **bottom:[ *int* ]**
-
-  distance in pixels from canvas bottom edge
-
-
-* **width:[ *int* ]**
-
-  width in pixels
-
-
-* **height:[ *int* ]**
-
-  height in pixels
-
-
-* **renderer:[ *THREE.WebGLRenderer* ]**
-
-  should maybe be private
+extends three-screen-quad
 
 
 ## Methods
 
-* **void computeUniform()**
-
-  refreshes shader uniform, should be called on canvas/window resize
-  TODO: rename
-
 * **void setNumber( *number:[int]* )**
 
   sets the number between 00 and 99, refreshes the uniform
-
-* **void update()**
-
-  updates stats ( *deltaTime* ), computes FPS every 1 second
-
-* **void render()**
-
-  renders the effect
-
-  for example
+  
+## Usage
 
   ```javascript
     mainRenderLoop(){
