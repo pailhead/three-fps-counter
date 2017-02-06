@@ -1,6 +1,6 @@
 # FPSCounter
 
-FPS counter that updates in the webgl canvas. 
+FPS counter that updates in the webgl canvas. Simple 2 digit renderer.
 
 
 ## Files
