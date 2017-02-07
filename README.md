@@ -1,6 +1,6 @@
 # FPSCounter
 
-FPS counter that updates in the webgl canvas. Simple 2 digit renderer.
+FPS counter for [three.js](https://github.com/mrdoob/three.js/) that updates in the webgl canvas. Simple 2 digit renderer. Extends [three-screen-quad](https://www.npmjs.com/package/three-screen-quad).
 
 
 ## Files
@@ -18,7 +18,7 @@ FPS counter that updates in the webgl canvas. Simple 2 digit renderer.
 
   generates the numbers texture
 
-* Stats.js
+* **Stats.js**
 
   computes fps - Stripped down [Stats.js](https://github.com/mrdoob/stats.js/)
 
@@ -26,17 +26,22 @@ FPS counter that updates in the webgl canvas. Simple 2 digit renderer.
 
 ## Constructor
 
-
-
-
 * **FPSCounter( *renderer:[ THREE.WebGLRenderer* ] , parameters )**
 
-  A renderer from the main app has to be passed 
-
+  A renderer from the main app has to be passed, along with parameters for [three-screen-quad](https://www.npmjs.com/package/three-screen-quad).
+  ```javascript
+  params:
+    top: Number || String     //default: null
+    left: Number || String    //default: 0
+    right: Number || String   //default: null
+    bottom: Number || String  //default: 0
+    width: Number || String   //default: '80px'
+    height: Number || String  //default: '40px'
+  ```
 
 ## Properties
 
-extends three-screen-quad
+extends [three-screen-quad](https://www.npmjs.com/package/three-screen-quad).
 
 
 ## Methods
@@ -55,3 +60,12 @@ extends three-screen-quad
   ```
 
   will draw the effect over a scene 
+
+
+## Test
+
+`npm install`
+`npm start`
+
+You should see a cube spinning and the counter in the lower left corner.
+

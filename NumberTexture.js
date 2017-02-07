@@ -1,4 +1,6 @@
 
+module.exports = function( THREE ){
+
 var ss = 6; //size 
 
 var numbers = [
@@ -63,5 +65,7 @@ var texture = new THREE.DataTexture(
 
 texture.needsUpdate = true;
 
-module.exports = texture;
+return texture;
+
+}
 
