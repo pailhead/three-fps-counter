@@ -2,7 +2,7 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-FPS counter for [three.js](https://github.com/mrdoob/three.js/) that updates in the webgl canvas. Simple 2 digit renderer. Extends [three-screen-quad](https://www.npmjs.com/package/three-screen-quad).
+FPS counter for [three.js](https://github.com/mrdoob/three.js/) that updates in the webgl canvas. Simple 2 digit renderer. Extends [three-screen-quad](https://www.npmjs.com/package/three-screen-quad), (live)(http://dusanbosnjak.com/test/webGL/three-screen-quad/).
 
 
 ## Files
