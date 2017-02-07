@@ -1,5 +1,7 @@
 # FPSCounter
 
+[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
+
 FPS counter for [three.js](https://github.com/mrdoob/three.js/) that updates in the webgl canvas. Simple 2 digit renderer. Extends [three-screen-quad](https://www.npmjs.com/package/three-screen-quad).
 
 
@@ -52,6 +54,8 @@ extends [three-screen-quad](https://www.npmjs.com/package/three-screen-quad).
   
 ## Usage
 
+[![NPM](https://nodei.co/npm/three-fps-counter.png)](https://npmjs.org/package/three-fps-counter)
+
   ```javascript
     mainRenderLoop(){
     	renderer.render(mainScene, mainCamera);
@@ -63,9 +67,10 @@ extends [three-screen-quad](https://www.npmjs.com/package/three-screen-quad).
 
 
 ## Test
-
-`npm install`
-`npm start`
+```
+npm install
+npm start
+```
 
 You should see a cube spinning and the counter in the lower left corner.
 
