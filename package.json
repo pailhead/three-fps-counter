@@ -1,6 +1,6 @@
 {
   "name": "three-fps-counter",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "simple 2 digit renderer for three.js",
   "main": "index.js",
   "scripts": {
