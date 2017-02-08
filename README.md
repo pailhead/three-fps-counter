@@ -57,9 +57,13 @@ extends [three-screen-quad](https://www.npmjs.com/package/three-screen-quad).
 [![NPM](https://nodei.co/npm/three-fps-counter.png)](https://npmjs.org/package/three-fps-counter)
 
   ```javascript
+    var FPSCounter = require('three-fps-counter')(THREE); //pass your instance of three
+    
+    var myfps = new FPSCounter( renderer );
+    
     mainRenderLoop(){
     	renderer.render(mainScene, mainCamera);
-    	FPSCounter.render();
+    	myfps.render();
     }
   ```
 
